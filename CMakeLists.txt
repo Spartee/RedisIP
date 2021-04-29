@@ -11,9 +11,5 @@ add_library(redisip SHARED
     src/ipmodule.c
 )
 
-
-set_target_properties(redisip PROPERTIES VERSION ${PROJECT_VERSION})
-
-
-
-
+set_target_properties(redisip PROPERTIES OUTPUT_NAME "redisip")
+set_target_properties(redisip PROPERTIES SUFFIX ".so")
